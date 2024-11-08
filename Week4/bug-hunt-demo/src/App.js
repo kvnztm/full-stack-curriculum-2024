@@ -50,9 +50,9 @@ export default function App() {
       <button onClick={setCountValue}>Increase Count Two</button>
       <button onClick={changeName}>Change Name</button>
       {/* 5. Why does the following code cause an infinite loop ? */}
-      {/* <button onClick={setCounter(counter + 1)}>
+      {/* <button onClick={() => setCounter(counter + 1)}>
         Stupid Button
-      </button>{" "} */}
+            </button> */}
       <h3>Counter One: {counter}</h3>
       <h3>Counter Two: {counterTwo}</h3>
       <h3>Name is : {name.fname + " " + name.lname}</h3>
